@@ -10,6 +10,10 @@ body{
 
 }
 
+#first-page{
+    display: flex;
+}
+
 
 
 .container{
