@@ -1,0 +1,98 @@
+*{
+box-sizing: border-box;
+}
+
+
+body{
+    margin:0px;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+
+
+.container{
+display:flex; 
+align-items: center;
+justify-content: center;
+background-image:url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-creative-flat-travel-tour-world-banner-image_170840.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height:100vh; 
+}  
+
+
+
+.question{
+display: flex;
+justify-content: center;  
+align-items: center;
+flex-direction: column;
+
+}
+
+
+
+.continets-image{
+width: 550px;
+height: 300px;
+}
+    
+
+.landscape-images-container{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.landscape-image{
+    height:200px;
+    width:23%;  
+    margin: 8px;  
+}
+
+.form{
+    padding-left:3px; 
+}
+
+.images{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:76vw;
+   
+}  
+
+
+#question-1{
+    display: none;
+}
+
+#question-2{
+    display: none;
+}
+
+#question-3{
+    display: none;
+}
+#question-4{
+    display: none;
+}
+
+#question-5{
+    display: none;
+} 
+
+
+
+
+.final-result{
+    display:none; 
+    flex-direction: column;
+}
+.final-image{
+    width: 400px;
+    height: 300px; 
+}
+

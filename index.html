@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BuzzQuizz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container" id="first-page">
+        <div class="question start">
+            <h1>Which continent will you visit next?</h1><br>
+            <div class="start-button">
+                <button type="submit" class="btn btn-primary button" onclick="thingsDisappear()">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="question-1">
+        <div class="question">
+            <h1>Question 1</h1>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">What type of food do you prefer?</label>
+                <select class="form-control" id="select-form">
+                    <option id="italian" value="2">Italian</option>
+                    <option id="asian" value="1">Asian</option>
+                    <option id="mexican" value="3">Mexican</option>
+                    <option id="american" value="4">American</option>
+
+                </select>
+            </div>
+            <div class="start-button">
+                <button type="submit" class="btn btn-primary button" onclick="foodQuestion()">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="question-2">
+        <div class="question">
+            <h1>Question 2</h1>
+            <label for="exampleFormControlSelect1">What do you like to do in your vacation?</label>
+            <div class="form">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio1" value="1" checked>
+                    <label class="form-check-label" for="exampleRadios1">Eat local food</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio2" value="4">
+                    <label class="form-check-label" for="exampleRadios2">Go to the beach</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio3" value="3" checked>
+                    <label class="form-check-label" for="exampleRadios1">Party</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radio4" value="2">
+                    <label class="form-check-label" for="exampleRadios2">Go to museums</label>
+                </div>
+                <br>
+                <div class="start-button">
+                    <button type="submit" class="btn btn-primary button" onclick="likeToDo()">Next</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container" id="question-3">
+        <div class="question q_3">
+            <h1>Question 3</h1>
+            <label>How do you prefer to travel?</label>
+            <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="3" id="check1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Car
+                    </label>
+                </div>
+                <div class="form-check checkbox">
+                    <input class="form-check-input" type="checkbox" value="1" id="check2">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Boat
+                    </label>
+                </div>
+                <div class="form-check checkbox">
+                    <input class="form-check-input" type="checkbox" value="4" name="1" id="check3">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Airplane
+                    </label>
+                </div>
+                <div class="form-check checkbox">
+                    <input class="form-check-input" type="checkbox" value="2" id="check4">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Train
+                    </label>
+                </div>
+                <br>
+                <div class="start-button checkbox">
+                    <button type="submit" class="btn btn-primary button" onclick="travelChoice()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="question-4">
+        <div class="question q_4">
+            <h1>Question 4</h1>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Which language do you like prefer: (French, Japanese, Spanish or
+                    English?)</label>
+                <input type="text" class="form-control" id="input-form" placeholder="please write your answer here"
+                    required>
+            </div>
+            <div class="start-button">
+                <button type="submit" class="btn btn-primary button" onclick="languageChoice()">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="question-5">
+        <div class="question">
+            <h1>Question 5</h1>
+            <label for="exampleFormControlSelect1">What kind of landscape do you prefer?</label>
+            <div class="images">
+
+                <button type="button"
+                    style="background:url(https://atlantis.nyc3.digitaloceanspaces.com/styled/8f4597e8d337d22501cede98b6b0ecb4); background-size:cover; background-position-x: center; background-repeat:no-repeat"
+                    id:="beach" class="landscape-image" alt="1" onclick="choose(this)" value="1"></button>
+                <button type="button"
+                    style="background:url(https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg); background-size:cover; background-repeat:no-repeat"
+                    id:="mountain" class="landscape-image" alt="2" onclick="choose(this)" value="3"></button>
+                <button type="button"
+                    style="background:url(https://media.timeout.com/images/105403910/630/472/image.jpg); background-size:cover; background-repeat:no-repeat"
+                    id:="city" class="landscape-image" alt="2" onclick="choose(this)" value="2"></button>
+                <button type="button"
+                    style="background:url(https://cdn.pixabay.com/photo/2016/09/08/13/58/desert-1654439__340.jpg); background-size:cover; background-repeat:no-repeat"
+                    id:="desert" class="landscape-image" alt="2" onclick="choose(this)" value="4"></button>
+
+            </div>
+
+            <div class="start-button">
+                <button type="submit" class="btn btn-primary button" onclick="finalResult()">Finish</button>
+            </div>
+        </div>
+    </div>
+    <div class="container final-result" id="asia-result">
+        <h1>The next continent you will visit is:</h1>
+        <img class="final-image"
+            src="https://www.shoreexcursions.asia/wp-content/uploads/2018/09/Typical-Costs-and-Saving-Hack-When-Travel-to-Japan.jpg">
+        <h1>Asia!</h1>
+    </div>
+    <div class="container final-result " id="europe-result">
+        <h1>The next continent you will visit is:</h1>
+        <img class="final-image" src="https://handluggageonly.co.uk/wp-content/uploads/2015/10/Hand-Luggage-Only-3.jpg">
+        <h1>Europe!</h1>
+    </div>
+    <div class="container final-result " id="southAmerica-result">
+        <h1>The next continent you will visit is:</h1>
+        <img class="final-image"
+            src="https://www.boletomachupicchu.com/gutblt/wp-content/uploads/2017/06/machu-picchu-amanecer.jpg">
+        <h1>South America!</h1>
+    </div>
+    <div class="container final-result " id="australia-result">
+        <h1>The next continent you will visit is:</h1>
+        <img class="final-image"
+            src="https://d1btnptfa0r0eu.cloudfront.net/wp-content/uploads/2019/09/963_MW_P05_Markets.jpg">
+        <h1>Australia!</h1>
+    </div>
+
+
+
+
+</body>
+
+</html>
