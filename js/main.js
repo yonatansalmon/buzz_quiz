@@ -1,6 +1,6 @@
 var finalAnswers = [];
 
-function pleaseDisappear(prev, next) {
+function disappear(prev, next) {
   let prevPage = document.getElementById(prev);
   let nextPage = document.getElementById(next);
   prevPage.style.display = "none";
@@ -105,9 +105,6 @@ function choose(element) {
   finalAnswers.push(parseInt(imageValue));
 }
 
-function fuck() {
-  console.log("Hi");
-}
 
 function thingsDisappear() {
   pleaseDisappear("first-page", "question-1");
